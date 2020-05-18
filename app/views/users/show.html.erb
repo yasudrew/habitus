@@ -1,0 +1,70 @@
+<div class='whole-wrapper'>
+  <div class= 'account-name'>
+    <%= current_user.nickname %>のアカウント
+  </div>
+  <div class='pic'>
+    <%= image_tag '/tumblr_nlnelvRVPX1sczrxso1_1280.jpg', :width=> '250'%>
+  </div>
+  <div class='btn-wrapper'>
+    <div class='btns'>
+      <div class='btn'>
+        <div class='question-btn'>
+          <%= link_to '質問を作る', new_myquestion_path %>
+        </div>
+      </div>
+      <div class='btn'>
+        <div class='index-btn'>
+          <%= link_to '一覧を見る',questions_path %>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class='post-wrapper'>
+    <div class='questions-box'>
+      <div class='questions'>
+        <div class='users-questions'>
+          <div class='users-questions__title'>
+            自分が作成した質問
+          </div>
+          <div class='users-questions__list'>
+            <% @myquestions.each do | myquestion | %>
+              <div class='myquestion'>
+                <div class= 'question-content'>
+                  <span>Q.</span> <div class='text'><%= myquestion.content %></div>
+                </div>
+                <div class='myquestion-btn'>
+                  <%= link_to '削除', myquestion_path(myquestion.id), method: :delete ,class:'delete'%>
+                </div>
+              </div>
+            <%end%>
+          </div>
+        </div>
+      </div>  
+      <%= @quiz %>
+      <div class='questions'>
+        <div class='pins-questions'>
+          <p class ='user-like'>
+            自分がピン留めした質問
+          </p>
+          <div class='user-like__list'>
+            <% current_user.questions.each do |question| %>
+              <div class='pin'>
+                <div class='pin-content'>
+                  <span>Q.</span><div class='text'><%= question.content %></div>
+                </div>
+                <div class='remove-btn'>
+                  <%= form_for(question.pins.find_by(user_id: current_user.id), method: :delete ) do |f| %> 
+                    <%= hidden_field_tag :question_id, question.id %>
+                    <%= f.submit "ピンを外す", class: "btn btn-outline-success" %>
+                  <% end %>
+                </div>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div>  
+      
+    </div>
+  </div>
+</div>

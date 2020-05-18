@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Habitus</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class='header'>
+      <div class='image'>
+        <a href = '/' ><%= image_tag "/menneske.png", size: '170x50'%></a>
+       </div>
+       <div class='header-nav'>
+          <% if user_signed_in? %>
+          <div class="grid-6">
+            <%= link_to "マイページ", user_path(current_user) , class: 'nav'%>
+            <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class:'nav' %>
+          </div>
+        <% else %>
+          <div class="grid-6">
+            <%= link_to "ログイン", new_user_session_path, class: 'nav' %>
+            <%= link_to "新規登録",  new_user_registration_path, class: 'nav' %>
+          </div>
+        <% end %>
+       </div>
+    </div>
+    <%= yield %>
+  </body>
+</html>

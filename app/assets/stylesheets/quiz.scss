@@ -1,0 +1,124 @@
+.show{
+  width: 100vw;
+  // height: 100vh;
+  // background-color: rgb(224, 224, 255);
+  .quiz{
+    width: 100%;
+    text-align: center;
+    padding-top: 60px;
+    font-family: '筑紫A丸ゴシック レギュラー';
+    .Q-mark{
+    font-size: 100px;
+    font-family: 'BM Hanna Air';
+    color: rgb(219, 219, 219);
+    }
+    .quiz-box{
+      width: 70%;
+      margin: auto;
+      padding-top: 20px;
+      .quiz-content{
+        width: 90%;
+        margin: auto;
+        background-color:  rgb(255, 249, 239);
+        border-radius: 20px;
+        border: 2px solid rgb(179, 179, 179);
+        padding: 20px;
+        .text{
+          font-size: 26px;
+        }
+      }
+      .score{
+        padding-top: 60px;
+        .score-sentence{
+          font-size: 22px;
+        }
+        .score-number{
+          padding-top: 27px;
+          font-family: 'BM Hanna Pro';
+          font-size: 48px;
+          letter-spacing: 25px; 
+        }
+      }
+    }
+    .next-btn-section{
+      margin-top: 120px;
+      display: flex;
+      justify-content: center;
+      .next-btn{
+        margin-right: 50px;
+        padding: 10px;
+        width: 10%;
+        background-color:rgb(255,207,110) ;
+        border-radius: 20px;
+        border-bottom: 4px solid rgb(218, 164, 56);
+        .next{
+          text-decoration: none;
+          color: black;
+          padding: 12px;
+        }
+      }
+      .finish-btn{
+        margin-left: 50px;
+        padding: 10px;
+        width: 10%;
+        background-color:rgb(255,207,110) ;
+        border-radius: 20px;
+        border-bottom: 4px solid rgb(218, 164, 56);
+        .finish{
+          text-decoration: none;
+          color: black;
+          padding: 12px;
+        }
+      }
+      .next-btn:active{
+        position: relative;
+        border-bottom: none;
+        top: 3px;
+      }
+      .finish-btn:active{
+        position: relative;
+        border-bottom: none;
+        top: 3px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px){
+  .show{
+    .quiz{
+      margin-top: 30px;
+      margin-bottom: 100px;
+      .quiz-box{
+        .quiz-content{
+          .text{
+            font-size: 22px;
+          }
+        }
+        .score{
+          .score-sentence{
+            font-size: 20px;
+          }
+          .score-number{
+            font-size: 30px;
+            letter-spacing: 10px;
+          }
+        }
+      }
+      .next-btn-section{
+        display: block;
+        margin-top: 50px;
+        .next-btn{
+          width: 50%;
+          margin: auto;
+        }
+        .finish-btn{
+          width: 50%;
+          margin: auto;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+
+}

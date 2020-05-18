@@ -1,0 +1,93 @@
+h2{
+  text-align: center;
+  font-family: 'BM Hanna Pro';
+  background-color: rgb(253, 253, 253);
+  font-size: 50px;
+  padding: 20px 0;
+}
+.session-body{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  .pic{
+    text-align: center;
+  }
+    .session-form{
+    width: 300px;
+    margin: auto;
+    background-color: rgb(255, 252, 240);
+    border: 4px solid #bdbdbd;
+    border-radius: 30px;
+    padding: 20px;
+
+    .field{
+      height: 15vh;
+      text-align: center;
+      label{
+        font-size: 30px;
+        font-family: 'BM Hanna Pro';
+      }
+      input{
+        font-size: 20px;
+        text-align: center;
+        line-height: 30px;
+        border: 4px solid #bdbdbd;
+      }
+    } 
+    .field-remember{
+      text-align: center;
+      font-family: 'BM Hanna Pro';
+    }
+
+  }
+  .actions{
+    text-align: center;
+    height: 50px;
+    margin-top: 50px;
+    .submit-btn{
+      width: 200px;
+      height: 40px;
+      border: 4px solid #bdbdbd;
+      border-radius: 40px;
+      background-color: rgb(255,207,110);
+      font-size: 25px;
+      font-family: 'BM Hanna Pro';
+    }
+  }
+}
+
+  .register-form{
+    width: 300px;
+    margin: auto;
+    background-color: rgb(255, 252, 240);
+    border: 4px solid #bdbdbd;
+    border-radius: 30px;
+    padding: 20px;
+
+    .r-field{
+      text-align: center;
+      padding-bottom: 10px;
+      label{
+        font-size: 27px;
+        font-family: 'BM Hanna Pro';
+      }
+      input{
+        width: 80%;
+        font-size: 12px;
+        text-align: center;
+        line-height: 30px;
+        border: 4px solid #bdbdbd;
+      }
+    }
+  }
+
+  @media(max-width: 480px){
+    .session-body{
+      .session-form{
+        width: 66%;
+      }
+    }
+    .register-form{
+      width: 66%;
+    }
+  }

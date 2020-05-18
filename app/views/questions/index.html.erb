@@ -1,0 +1,22 @@
+<script src='question.js'></script>
+
+
+<div class='main-container'>
+  <h1>質問一覧表</h1>
+  <div class='questions'>
+    <div class='question'>
+      <% @questions.each do |question| %>
+        <div class= 'content'>
+          <span>Q.</span> <div class='text'><%= question.content %></div>
+        </div>
+        <% if user_signed_in? %>
+          <%= form_for(question.pins.build) do |f| %>
+            <%= hidden_field_tag :question_id, question.id %>
+            <%= f.submit 'ピン留めする', class: 'btn btn-primary' %>
+          <% end %>
+        <% end %>
+      <% end %>
+    </div>
+    <%= paginate(@questions) %>
+  </div>
+</div>

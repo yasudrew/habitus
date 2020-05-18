@@ -1,0 +1,11 @@
+<div class ='form-wrapper'>
+  <div class="content__title">
+    質問を作成する
+  </div>
+  <div class='content__form'>
+    <%= form_with model: @myquestion, class: :form, local: true do |form| %>
+      <%= form.text_area :content, placeholder: :質問内容, class: :form__text %>
+      <%= form.submit '作成', class: :form__btn %>
+    <% end %>
+  </div>
+</div>

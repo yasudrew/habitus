@@ -1,0 +1,34 @@
+<div class ='show'>
+  <div class='quiz'>
+    <div class='Q-mark'>
+      Q
+    </div>
+    <div class ='quiz-box'>
+      <div class='quiz-content'>
+        <div class='text'><%= @quiz.content %></div>
+      </div>
+      <div class='score'>
+        <div class='score-sentence'>
+          あなたの感覚値を相手と共有し、話し合ってみましょう。
+        </div>
+        <div class='score-number'>
+          1・2・3・4・5
+        </div>
+      </div>
+    </div>
+    <div class='next-btn-section'>
+      <div class='next-btn'>
+        <%= link_to '次の対話へ', quiz_questions_path, class: "next" %>
+      </div>
+      <div class='finish-btn'>
+        <%= link_to '終了する', top_questions_path , class: "finish"%>
+      </div>  
+    </div>
+  </div>
+</div>
+
+<script type='text/javascript'>
+$('next').click(function(){
+
+})
+</script>

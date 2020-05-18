@@ -1,0 +1,41 @@
+<h2>Sign up</h2>
+
+
+<div class='session-body'>
+  <div class ='register-form'>
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= render "devise/shared/error_messages", resource: resource %>
+
+
+      <div class="r-field">
+        <%= f.label :nickname %><br />
+        <%= f.text_field :nickname, autofocus: true ,placeholder:'ニックネーム'%>
+      </div>
+      <div class="r-field">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true, autocomplete: "email" ,placeholder:'メールアドレス'%>
+      </div>
+
+      <div class="r-field">
+        <%= f.label :password %><br>
+        <% if @minimum_password_length %>
+        <em>(<%= @minimum_password_length %> characters minimum)</em>
+        <% end %><br />
+        <%= f.password_field :password, autocomplete: "new-password" ,placeholder:'パスワード'%>
+      </div>
+
+      <div class="r-field">
+        <%= f.label :password_confirmation %><br />
+        <%= f.password_field :password_confirmation, autocomplete: "new-password" ,placeholder:'パスワードをもう一度入力してください'%>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "Sign up", class: "submit-btn" %>
+      </div>
+    <% end %>
+  </div>
+  <div class='pic'>
+    <%= image_tag '/assets/a3544e87e2c173e8594d8dc085bf2087.jpg', :width=> '250'%>
+  </div>
+</div>
+<%# <%= render "devise/shared/links" %> 

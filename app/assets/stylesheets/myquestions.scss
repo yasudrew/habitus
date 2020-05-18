@@ -1,0 +1,36 @@
+.form-wrapper{
+  width: 100%;
+  margin: auto;
+  padding-top: 50px;
+  text-align: center;
+  font-family: '筑紫A丸ゴシック レギュラー';
+  .content__title{
+    font-size: 30px;
+  }
+  .content__form{
+    padding-top: 50px;
+    .form{
+      margin: auto;
+      .form__text{
+        width: 55%;
+        height: 80px;
+        font-size: 18px;
+      }
+      .form__btn{
+        display: block;
+        width: 150px;
+        background-color: rgb(255,207,110);
+        border: solid 1px rgb(255,207,110);
+        border-radius: 20px;
+        border-bottom: 4px solid rgb(218, 164, 56);
+        margin: 15px auto 0;
+        height: 50px;
+      }
+      .form__btn:active{
+        position: relative;
+        border-bottom: none;
+        top: 3px;
+      }
+    }
+  }
+}
