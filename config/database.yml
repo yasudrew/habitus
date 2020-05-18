@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: habitus_production
-  username: habitus
-  password: <%= ENV['HABITUS_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
