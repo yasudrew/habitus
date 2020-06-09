@@ -7,16 +7,16 @@
 
 ## アプリ機能
 <p>1. 画面上にランダムにトークトピックが表示される</p>
-!(https://gyazo.com/68c41a5e59a792b5ccb25bc2164f9f69)
+![36e8b13d2b1713f12f123f099febfb9c](https://user-images.githubusercontent.com/63987719/84105107-4a5efa00-aa52-11ea-9bf0-43bce327a333.gif)
 
 <p>2. 質問作成機能</p>
-!(https://gyazo.com/5ff912727478e0e97bad068526939d40)
+![5ff912727478e0e97bad068526939d40](https://user-images.githubusercontent.com/63987719/84098151-732ac380-aa41-11ea-95a7-8e17ab6a8b58.png)
 
 <p>3. お気に入り機能</p>
-!(https://gyazo.com/6b4c87116272eaa1a7cb4bfa0084e5f3)
+![6b4c87116272eaa1a7cb4bfa0084e5f3](https://user-images.githubusercontent.com/63987719/84098123-5f7f5d00-aa41-11ea-98e4-d5f637316ed7.png)
 
 <p>4. レスポンシブデザイン</p>
-!(https://gyazo.com/efe72c02f0f1aafb62e8394f6d31cb34)
+![efe72c02f0f1aafb62e8394f6d31cb34](https://user-images.githubusercontent.com/63987719/84098072-4676ac00-aa41-11ea-830e-c049b74ef3a9.png)
 
 ## 使用方法
 $ git clone https://github.com/yasudrew/habitus.git<br>
