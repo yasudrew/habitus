@@ -1,5 +1,5 @@
 
-![Menneske syn](https://gyazo.com/9d51609e22f8707c6f29c653aaee85eb)
+<img src='https://gyazo.com/9d51609e22f8707c6f29c653aaee85eb'>
 
 ## App URL
 
