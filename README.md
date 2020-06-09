@@ -1,10 +1,9 @@
-# README
 
-!(https://gyazo.com/9d51609e22f8707c6f29c653aaee85eb)
+![Menneske syn](https://gyazo.com/9d51609e22f8707c6f29c653aaee85eb)
 
 ## App URL
 
-### **54.178.122.13
+### 54.178.122.13
 
 ## アプリ機能
 <p>1. 画面上にランダムにトークトピックが表示される</p>
@@ -20,12 +19,12 @@
 !(https://gyazo.com/efe72c02f0f1aafb62e8394f6d31cb34)
 
 ## 使用方法
-$ git clone https://github.com/yasudrew/habitus.git
-$ cd habitus
-$ bundle install
-$ rails db:create
-$ rails db:migrate
-$ rails s
+$ git clone https://github.com/yasudrew/habitus.git<br>
+$ cd habitus<br>
+$ bundle install<br>
+$ rails db:create<br>
+$ rails db:migrate<br>
+$ rails s<br>
 👉 http://localhost:3000
 
 
