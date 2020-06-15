@@ -42,7 +42,7 @@
 ## 使用技術
 ### Ruby on Rails
 ### Github
-### AWS
+### AWS  
   
 
 ## 課題や今後実装したい機能
