@@ -27,11 +27,11 @@
 ![36e8b13d2b1713f12f123f099febfb9c](https://user-images.githubusercontent.com/63987719/84105107-4a5efa00-aa52-11ea-9bf0-43bce327a333.gif)
 
 ### 2. 質問作成機能
-
+#### ログイン後マイページから自分だけの質問を作成できる
 ![5ff912727478e0e97bad068526939d40](https://user-images.githubusercontent.com/63987719/84098151-732ac380-aa41-11ea-95a7-8e17ab6a8b58.png)
 
 ### 3. お気に入り機能
-
+#### デフォルトで作成してあるゲーム用の質問集からお気に入りの質問をマイページにピン留めできる
 ![6b4c87116272eaa1a7cb4bfa0084e5f3](https://user-images.githubusercontent.com/63987719/84098123-5f7f5d00-aa41-11ea-98e4-d5f637316ed7.png)
 
 ### 4. レスポンシブデザイン
